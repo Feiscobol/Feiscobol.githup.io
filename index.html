@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Casas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Encuentra la Casa de Tus Sueños</h1>
+        <p>Explora nuestras opciones de casas en venta y encuentra la ideal para ti.</p>
+    </header>
+    
+    <section class="gallery">
+        <div class="house-card" onclick="showDetails('casa1')">
+            <img src="casa1.jpg" alt="Casa 1">
+            <h2>Casa Moderna</h2>
+            <p>3 dormitorios, 2 baños, jardín</p>
+        </div>
+        <div class="house-card" onclick="showDetails('casa2')">
+            <img src="casa2.jpg" alt="Casa 2">
+            <h2>Casa Familiar</h2>
+            <p>4 dormitorios, 3 baños, garaje</p>
+        </div>
+        <div class="house-card" onclick="showDetails('casa3')">
+            <img src="casa3.jpg" alt="Casa 3">
+            <h2>Casa con Piscina</h2>
+            <p>5 dormitorios, 4 baños, piscina y terraza</p>
+        </div>
+    </section>
+
+    <section class="details" id="house-details">
+        <h3 id="house-title">Detalles de la Casa</h3>
+        <p id="house-description">Selecciona una casa para ver los detalles.</p>
+        <button onclick="closeDetails()">Cerrar</button>
+    </section>
+
+    <section class="contact">
+        <h2>Contáctanos</h2>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
